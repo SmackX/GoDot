@@ -1,0 +1,21 @@
+/*
+* ##### #   #  ##  ##### ####  #   #  ###  ##### #####  ###  #   #
+*   #   ##  # #  #   #   #   # #   # #   #   #     #   #   # ##  #
+*   #   # # #  #     #   ####  #   # #       #     #   #   # # # #
+*   #   #  ##    #   #   # #   #   # #   #   #     #   #   # #  ##
+* ##### #   #  ##    #   #  #   ###   ###    #   #####  ###  #   #
+*/
+
+// fitrst comand
+	git add .
+
+// commit, commit_name
+	git commit -m 'commit_name'
+	git commit -m ''
+
+// push on branch main
+	git push -u origin main
+
+// add file
+	git add gitInstr.txt
+	git add 
