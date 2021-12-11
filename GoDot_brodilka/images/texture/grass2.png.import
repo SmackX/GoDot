@@ -1,0 +1,13 @@
+[remap]
+
+importer="image"
+type="Image"
+path="res://.import/grass2.png-407f24e1d252726d3b9df75a5b8a0a29.image"
+
+[deps]
+
+source_file="res://images/texture/grass2.png"
+dest_files=[ "res://.import/grass2.png-407f24e1d252726d3b9df75a5b8a0a29.image" ]
+
+[params]
+
