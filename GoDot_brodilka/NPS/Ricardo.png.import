@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/icon.png-487276ed1e3a0c39cad0279d744ee560.stex"
+path="res://.import/Ricardo.png-eef39fc404cb5952f1b42d7ebfcc3fa4.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://icon.png"
-dest_files=[ "res://.import/icon.png-487276ed1e3a0c39cad0279d744ee560.stex" ]
+source_file="res://NPS/Ricardo.png"
+dest_files=[ "res://.import/Ricardo.png-eef39fc404cb5952f1b42d7ebfcc3fa4.stex" ]
 
 [params]
 
