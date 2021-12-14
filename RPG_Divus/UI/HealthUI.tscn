@@ -14,10 +14,10 @@ __meta__ = {
 }
 
 [node name="HeartUIEmpty" type="TextureRect" parent="."]
-margin_left = 7.0
-margin_top = 16.0
-margin_right = 87.0
-margin_bottom = 21.0
+margin_left = 206.25
+margin_top = 156.0
+margin_right = 286.25
+margin_bottom = 161.0
 rect_pivot_offset = Vector2( 156.565, 53.8491 )
 texture = ExtResource( 3 )
 stretch_mode = 2
@@ -26,10 +26,10 @@ __meta__ = {
 }
 
 [node name="HeartUIFull" type="TextureRect" parent="."]
-margin_left = 5.83542
-margin_top = 13.6777
-margin_right = 84.8354
-margin_bottom = 19.6777
+margin_left = 205.085
+margin_top = 153.678
+margin_right = 284.085
+margin_bottom = 159.678
 texture = ExtResource( 2 )
 expand = true
 stretch_mode = 2
@@ -38,5 +38,5 @@ __meta__ = {
 }
 
 [node name="Sprite" type="Sprite" parent="."]
-position = Vector2( 50.7349, 16.9706 )
+position = Vector2( 249.985, 156.971 )
 texture = ExtResource( 4 )
