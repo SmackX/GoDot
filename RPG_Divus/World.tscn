@@ -1,4 +1,4 @@
-[gd_scene load_steps=67 format=2]
+[gd_scene load_steps=65 format=2]
 
 [ext_resource path="res://World/Bush.tscn" type="PackedScene" id=1]
 [ext_resource path="res://Player/Player.tscn" type="PackedScene" id=2]
@@ -10,10 +10,9 @@
 [ext_resource path="res://UI/HealthUI.tscn" type="PackedScene" id=8]
 [ext_resource path="res://World/Tree.tscn" type="PackedScene" id=9]
 [ext_resource path="res://Camera2D.tscn" type="PackedScene" id=10]
-[ext_resource path="res://NPS/ping.png" type="Texture" id=11]
-[ext_resource path="res://NPS/CJ.png" type="Texture" id=12]
-[ext_resource path="res://NPS/gadplayer.png" type="Texture" id=13]
-[ext_resource path="res://NPS/idle.png" type="Texture" id=14]
+[ext_resource path="res://NPS/pink.tscn" type="PackedScene" id=11]
+[ext_resource path="res://NPS/green.tscn" type="PackedScene" id=12]
+[ext_resource path="res://NPS/wUnkle.tscn" type="PackedScene" id=13]
 [ext_resource path="res://NPS/CJ.tscn" type="PackedScene" id=15]
 [ext_resource path="res://NPS/badsm.tscn" type="PackedScene" id=16]
 
@@ -491,14 +490,10 @@ points = PoolVector2Array( 0, 0, 32, 0, 32, 32, 0, 32 )
 } ]
 0/z_index = 0
 
-[sub_resource type="CapsuleShape2D" id=50]
-radius = 1.11473
-height = 6.64209
-
 [node name="World" type="Node2D"]
 
 [node name="Background" type="Sprite" parent="."]
-position = Vector2( 495.946, 214.701 )
+position = Vector2( 495.946, 215.645 )
 scale = Vector2( 1.89362, 1.52546 )
 texture = ExtResource( 3 )
 region_enabled = true
@@ -882,52 +877,22 @@ position = Vector2( 29.1713, 49.5478 )
 [node name="Grass23" parent="YSort/Grass32" instance=ExtResource( 6 )]
 position = Vector2( 35.1646, -5.14046 )
 
-[node name="NPC" type="StaticBody2D" parent="YSort"]
-position = Vector2( 509.725, 357.057 )
-scale = Vector2( 1.89362, 1.52546 )
+[node name="NPC" type="YSort" parent="YSort"]
 
-[node name="Sprite" type="Sprite" parent="YSort/NPC"]
-position = Vector2( 22.5319, -5.3752 )
-scale = Vector2( 0.6, 0.6 )
-texture = ExtResource( 12 )
-offset = Vector2( -1.62976, -1.53018 )
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="YSort/NPC"]
-position = Vector2( 21.9008, -4.76355 )
-rotation = 1.5708
-shape = SubResource( 50 )
-
-[node name="NPC2" type="StaticBody2D" parent="YSort"]
-position = Vector2( 523.611, 221.848 )
-scale = Vector2( 1.89362, 1.52546 )
-
-[node name="Sprite" type="Sprite" parent="YSort/NPC2"]
-position = Vector2( 171.304, -68.7539 )
-texture = ExtResource( 13 )
-
-[node name="NPC3" type="StaticBody2D" parent="YSort"]
-position = Vector2( 487.131, 245.139 )
-scale = Vector2( 1.89362, 1.52546 )
-
-[node name="Sprite" type="Sprite" parent="YSort/NPC3"]
-position = Vector2( 231.042, 140.945 )
-texture = ExtResource( 11 )
-
-[node name="NPC4" type="StaticBody2D" parent="YSort"]
-position = Vector2( 552.036, 268.414 )
-scale = Vector2( 1.89362, 1.52546 )
-
-[node name="Sprite" type="Sprite" parent="YSort/NPC4"]
-position = Vector2( -221.152, 129.159 )
-texture = ExtResource( 14 )
-
-[node name="NPC5" type="YSort" parent="YSort"]
-
-[node name="CJ" parent="YSort/NPC5" instance=ExtResource( 15 )]
+[node name="CJ" parent="YSort/NPC" instance=ExtResource( 15 )]
 position = Vector2( 497.663, 347.063 )
 
-[node name="badsm" parent="YSort/NPC5" instance=ExtResource( 16 )]
+[node name="badsm" parent="YSort/NPC" instance=ExtResource( 16 )]
 position = Vector2( 657.336, 212.973 )
+
+[node name="wUnkle" parent="YSort/NPC" instance=ExtResource( 13 )]
+position = Vector2( 840.297, 112.343 )
+
+[node name="pink" parent="YSort/NPC" instance=ExtResource( 11 )]
+position = Vector2( 919.333, 457.779 )
+
+[node name="green" parent="YSort/NPC" instance=ExtResource( 12 )]
+position = Vector2( 137.806, 480.432 )
 
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
 
